@@ -1,6 +1,6 @@
 package ru.contentforge.formconstructor.form;
 
-import cn.nukkit.Player;
+import cn.nukkit.player.Player;
 import ru.contentforge.formconstructor.form.element.CustomFormElement;
 import ru.contentforge.formconstructor.form.element.Label;
 import ru.contentforge.formconstructor.form.element.validator.ValidationField;

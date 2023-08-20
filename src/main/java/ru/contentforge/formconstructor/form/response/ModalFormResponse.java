@@ -1,6 +1,6 @@
 package ru.contentforge.formconstructor.form.response;
 
-import cn.nukkit.Player;
+import cn.nukkit.player.Player;
 import ru.contentforge.formconstructor.form.handler.ModalFormHandler;
 
 public class ModalFormResponse extends Response<ModalFormHandler> {

@@ -1,6 +1,6 @@
 package ru.contentforge.formconstructor.task;
 
-import cn.nukkit.Player;
+import cn.nukkit.player.Player;
 import cn.nukkit.Server;
 import cn.nukkit.form.response.FormResponse;
 import cn.nukkit.scheduler.AsyncTask;
@@ -36,7 +36,7 @@ public class FormHandlingTask extends AsyncTask {
             NoneHandler noneHandler = ((CloseableForm) form).getNoneHandler();
             
             PlayerFormCloseEvent event = new PlayerFormCloseEvent(player, form);
-            Server.getInstance().getPluginManager().callEvent(event);
+            event.call();
             
             if(noneHandler != null) noneHandler.handle(player);
             return;
